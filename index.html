@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEDRİC GAMİNG | Premium Modding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary: #ff4500;
@@ -13,7 +14,7 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', sans-serif;
             background-color: var(--bg-dark);
             color: #e0e0e0;
             margin: 0;
@@ -25,20 +26,18 @@
             overflow: hidden;
         }
 
-        /* Arkaplan Işıltısı */
         .glow {
             position: absolute;
             width: 300px;
             height: 300px;
-            background: radial-gradient(circle, rgba(255, 69, 0, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 69, 0, 0.1) 0%, transparent 70%);
             z-index: -1;
-            top: 50%;
-            left: 50%;
+            top: 50%; left: 50%;
             transform: translate(-50%, -50%);
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             letter-spacing: 5px;
             text-transform: uppercase;
             margin: 0;
@@ -51,63 +50,79 @@
         header p {
             color: var(--primary);
             letter-spacing: 2px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             margin-top: 10px;
             opacity: 0.8;
         }
 
         .menu-container {
-            margin-top: 50px;
+            margin-top: 40px;
             display: grid;
-            gap: 20px;
-            width: 90%;
-            max-width: 500px;
+            gap: 15px;
+            width: 85%;
+            max-width: 450px;
         }
 
         .menu-btn {
             position: relative;
             background: var(--card-bg);
             border: 1px solid var(--border);
-            padding: 30px;
+            padding: 25px;
             text-decoration: none;
             color: white;
-            border-radius: 4px; /* Keskin ve asil hatlar */
+            border-radius: 4px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             transition: all 0.4s ease;
             backdrop-filter: blur(10px);
-            overflow: hidden;
-        }
-
-        .menu-btn::before {
-            content: '';
-            position: absolute;
-            left: 0; top: 0;
-            height: 100%;
-            width: 3px;
-            background: var(--primary);
-            transition: width 0.3s ease;
-            z-index: -1;
-            opacity: 0.5;
         }
 
         .menu-btn:hover {
             border-color: var(--primary);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transform: translateY(-3px);
+            background: rgba(255, 69, 0, 0.05);
         }
 
-        .menu-btn:hover::before {
-            width: 100%;
-            opacity: 0.1;
+        /* İletişim ve İstek Alanı */
+        .request-section {
+            margin-top: 60px;
+            text-align: center;
         }
+
+        .request-text {
+            font-size: 0.75rem;
+            color: #666;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .social-container {
+            display: flex;
+            gap: 35px;
+            justify-content: center;
+        }
+
+        .social-icon {
+            color: #888;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .instagram:hover { color: #E1306C; }
+        .telegram:hover { color: #0088cc; }
 
         footer {
             position: fixed;
-            bottom: 30px;
-            font-size: 0.7rem;
-            color: #444;
+            bottom: 20px;
+            font-size: 0.6rem;
+            color: #222;
             letter-spacing: 1px;
         }
     </style>
@@ -123,11 +138,23 @@
 
     <div class="menu-container">
         <a href="uygulamalar.html" class="menu-btn">
-            UYGULAMALAR <span style="float: right; color: var(--primary);">→</span>
+            UYGULAMALAR <span style="float: right; color: var(--primary); opacity: 0.5;">→</span>
         </a>
         <a href="oyunlar.html" class="menu-btn">
-            OYUNLAR <span style="float: right; color: var(--primary);">→</span>
+            OYUNLAR <span style="float: right; color: var(--primary); opacity: 0.5;">→</span>
         </a>
+    </div>
+
+    <div class="request-section">
+        <div class="request-text">İstek oyun veya uygulama?</div>
+        <div class="social-container">
+            <a href="https://instagram.com/kadirtml.tr" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://t.me/cedricgaming" target="_blank" class="social-icon telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
     </div>
 
     <footer>
