@@ -12,7 +12,6 @@
             --card-bg: rgba(255, 255, 255, 0.03);
             --border: rgba(255, 255, 255, 0.1);
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-dark);
@@ -25,7 +24,6 @@
             justify-content: center;
             overflow: hidden;
         }
-
         .glow {
             position: absolute;
             width: 300px;
@@ -35,7 +33,6 @@
             top: 50%; left: 50%;
             transform: translate(-50%, -50%);
         }
-
         header h1 {
             font-size: 2.8rem;
             letter-spacing: 5px;
@@ -46,23 +43,8 @@
             -webkit-text-fill-color: transparent;
             font-weight: 900;
         }
-
-        header p {
-            color: var(--primary);
-            letter-spacing: 2px;
-            font-size: 0.8rem;
-            margin-top: 10px;
-            opacity: 0.8;
-        }
-
-        .menu-container {
-            margin-top: 40px;
-            display: grid;
-            gap: 15px;
-            width: 85%;
-            max-width: 450px;
-        }
-
+        header p { color: var(--primary); letter-spacing: 2px; font-size: 0.8rem; margin-top: 10px; opacity: 0.8; }
+        .menu-container { margin-top: 40px; display: grid; gap: 15px; width: 85%; max-width: 450px; }
         .menu-btn {
             position: relative;
             background: var(--card-bg);
@@ -77,89 +59,36 @@
             transition: all 0.4s ease;
             backdrop-filter: blur(10px);
         }
-
-        .menu-btn:hover {
-            border-color: var(--primary);
-            transform: translateY(-3px);
-            background: rgba(255, 69, 0, 0.05);
-        }
-
-        /* İletişim ve İstek Alanı */
-        .request-section {
-            margin-top: 60px;
-            text-align: center;
-        }
-
-        .request-text {
-            font-size: 0.75rem;
-            color: #666;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-
-        .social-container {
-            display: flex;
-            gap: 35px;
-            justify-content: center;
-        }
-
-        .social-icon {
-            color: #888;
-            font-size: 2rem;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-
-        .social-icon:hover {
-            transform: scale(1.2);
-        }
-
+        .menu-btn:hover { border-color: var(--primary); transform: translateY(-3px); background: rgba(255, 69, 0, 0.05); }
+        .request-section { margin-top: 60px; text-align: center; }
+        .request-text { font-size: 0.75rem; color: #666; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
+        .social-container { display: flex; gap: 25px; justify-content: center; }
+        .social-icon { color: #888; font-size: 1.8rem; transition: all 0.3s ease; text-decoration: none; }
+        .social-icon:hover { transform: scale(1.2); }
         .instagram:hover { color: #E1306C; }
         .telegram:hover { color: #0088cc; }
-
-        footer {
-            position: fixed;
-            bottom: 20px;
-            font-size: 0.6rem;
-            color: #222;
-            letter-spacing: 1px;
-        }
+        .youtube:hover { color: #FF0000; }
+        footer { position: fixed; bottom: 20px; font-size: 0.6rem; color: #222; letter-spacing: 1px; }
     </style>
 </head>
 <body>
-
     <div class="glow"></div>
-
     <header>
         <h1>CEDRİC GAMİNG</h1>
         <p>PREMIUM MODS & TOOLS</p>
     </header>
-
     <div class="menu-container">
-        <a href="uygulamalar.html" class="menu-btn">
-            UYGULAMALAR <span style="float: right; color: var(--primary); opacity: 0.5;">→</span>
-        </a>
-        <a href="oyunlar.html" class="menu-btn">
-            OYUNLAR <span style="float: right; color: var(--primary); opacity: 0.5;">→</span>
-        </a>
+        <a href="uygulamalar.html" class="menu-btn">UYGULAMALAR <span style="float: right; color: var(--primary); opacity: 0.5;">→</span></a>
+        <a href="oyunlar.html" class="menu-btn">OYUNLAR <span style="float: right; color: var(--primary); opacity: 0.5;">→</span></a>
     </div>
-
     <div class="request-section">
         <div class="request-text">İstek oyun veya uygulama?</div>
         <div class="social-container">
-            <a href="https://instagram.com/kadirtml.tr" target="_blank" class="social-icon instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://t.me/cedricgaming" target="_blank" class="social-icon telegram">
-                <i class="fab fa-telegram"></i>
-            </a>
+            <a href="https://instagram.com/kadirtml.tr" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/cedricgaming" target="_blank" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://youtube.com/@cedricgaming01?si=l9hIQaNzLQbeqoaK" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
         </div>
     </div>
-
-    <footer>
-        DESIGNED FOR THE ELITE - 2026
-    </footer>
-
+    <footer>DESIGNED FOR THE ELITE - 2026</footer>
 </body>
 </html>
