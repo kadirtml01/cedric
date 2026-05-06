@@ -3,74 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEDRİC GAMİNG | Modlu Uygulamalar</title>
+    <title>CEDRİC GAMİNG | Giriş</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0f0f0f;
+            color: white;
             margin: 0;
-            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             text-align: center;
         }
-        header {
-            background-color: #1f1f1f;
-            padding: 30px;
-            border-bottom: 3px solid #ff4500; /* Turuncu-kırmızı oyun teması rengi */
+        h1 { color: #ff4500; font-size: 2.5rem; margin-bottom: 30px; }
+        .menu-container {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            width: 80%;
+            max-width: 400px;
         }
-        h1 { color: #ff4500; margin: 0; letter-spacing: 2px; }
-        .container { padding: 20px; }
-        .card {
+        .menu-btn {
             background-color: #1e1e1e;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 450px;
-            border: 1px solid #333;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.6);
-        }
-        .download-btn {
-            display: inline-block;
-            background-color: #ff4500;
             color: white;
-            padding: 12px 25px;
+            padding: 25px;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 15px;
+            font-size: 1.2rem;
             font-weight: bold;
-            margin-top: 15px;
+            border: 2px solid #333;
             transition: 0.3s;
         }
-        .download-btn:hover { background-color: #e63e00; }
-        footer {
-            margin-top: 50px;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #666;
-            background: #1a1a1a;
+        .menu-btn:hover {
+            border-color: #ff4500;
+            background-color: #252525;
+            transform: scale(1.05);
         }
+        .btn-apps { border-left: 8px solid #00c853; } /* Uygulamalar için Yeşil */
+        .btn-games { border-left: 8px solid #3d5afe; } /* Oyunlar için Mavi */
     </style>
 </head>
 <body>
 
-<header>
     <h1>CEDRİC GAMİNG</h1>
-    <p>Profesyonel Modlu Uygulama Platformu</p>
-</header>
+    <p>Lütfen bir kategori seçin</p>
 
-<div class="container">
-    <h2>GÜNCEL MODLAR</h2>
-
-    <div class="card">
-        <h3>Uygulama Adı Buraya</h3>
-        <p>Mod Özellikleri: Reklamlar kaldırıldı, tüm özellikler açıldı.</p>
-        <p style="color: #888; font-size: 0.85rem;">Uyumlu Sürüm: Android 9.0+</p>
-        <a href="#" class="download-btn">DOSYAYI İNDİR</a>
+    <div class="menu-container">
+        <a href="uygulamalar.html" class="menu-btn btn-apps">MODLU UYGULAMALAR</a>
+        <a href="oyunlar.html" class="menu-btn btn-games">MODLU OYUNLAR</a>
     </div>
-</div>
 
-<footer>
-    <p>&copy; 2026 CEDRİC GAMİNG. Tüm içerikler bilgilendirme amaçlıdır.</p>
-</footer>
+    <footer style="position: absolute; bottom: 20px; color: #555;">
+        &copy; 2026 CEDRİC GAMİNG
+    </footer>
 
 </body>
 </html>
