@@ -23,20 +23,6 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        /* Arka plana asil bir parıltı */
-        body::before {
-            content: "";
-            position: absolute;
-            top: -10%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(255, 69, 0, 0.1) 0%, transparent 70%);
-            z-index: -1;
         }
 
         header {
@@ -62,17 +48,14 @@
             letter-spacing: 4px;
             text-transform: uppercase;
             margin-top: 10px;
-            font-weight: bold;
         }
 
-        /* Yeni Grid Düzeni */
         .menu-grid {
             width: 90%;
             max-width: 450px;
             display: grid;
-            grid-template-columns: 1fr 1fr; /* Uygulama ve Oyun Yan Yana */
+            grid-template-columns: 1fr 1fr;
             gap: 15px;
-            margin-bottom: 50px;
         }
 
         .menu-card {
@@ -86,74 +69,48 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: 0.3s;
             text-align: center;
         }
 
-        .menu-card i {
-            font-size: 1.8rem;
-            color: var(--primary);
-            margin-bottom: 12px;
-        }
+        .full-width { grid-column: span 2; flex-direction: row; text-align: left; padding: 20px 25px; justify-content: space-between; }
+        
+        .menu-card i { font-size: 1.8rem; color: var(--primary); margin-bottom: 12px; }
+        .full-width i { margin-bottom: 0; margin-right: 15px; }
 
-        .menu-card span {
-            font-weight: bold;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        /* Sipariş ve Örnek Projeler İçin Tam Genişlik */
-        .full-width {
-            grid-column: span 2;
-            flex-direction: row;
-            text-align: left;
-            padding: 20px 25px;
-            justify-content: space-between;
-        }
-
-        .full-width i { margin-bottom: 0; margin-right: 5px; }
-
-        .card-info { flex: 1; margin-left: 15px; }
-        .card-info span { display: block; font-size: 1rem; }
-        .card-info small { color: #555; font-size: 0.7rem; }
-
-        /* Asalet Dokunuşu (Altın Çerçeve) */
-        .gold-border {
-            border: 1px solid rgba(212, 175, 55, 0.3) !important;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.05);
-        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3) !important; }
         .gold-border i { color: var(--accent-gold); }
 
-        /* Sipariş Merkezi - Canlı Renk */
-        .order-card {
-            background: linear-gradient(45deg, #ff4500, #b33000);
-            border: none;
-        }
+        .order-card { background: linear-gradient(45deg, #ff4500, #b33000); border: none; }
         .order-card i, .order-card span, .order-card small { color: #fff !important; }
 
-        .menu-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
-            background: rgba(255, 69, 0, 0.05);
+        /* YENİ: Alt Bilgi Kutuları (Boşluğu Kapatan Kısım) */
+        .info-section {
+            width: 90%;
+            max-width: 450px;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 40px;
         }
 
-        .social-links {
-            margin-top: auto;
-            display: flex;
-            gap: 25px;
-            padding-bottom: 40px;
+        .info-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
         }
 
-        .social-links a { color: #333; font-size: 1.2rem; transition: 0.3s; }
-        .social-links a:hover { color: var(--primary); }
+        .info-box i { color: var(--primary); font-size: 1.2rem; margin-bottom: 8px; }
+        .info-box span { display: block; font-size: 0.7rem; font-weight: bold; letter-spacing: 1px; }
+        .info-box small { color: #555; font-size: 0.6rem; }
 
-        footer {
-            padding-bottom: 20px;
-            font-size: 0.55rem;
-            color: #222;
-            letter-spacing: 3px;
-        }
+        .social-links { display: flex; gap: 25px; padding-bottom: 30px; margin-top: auto; }
+        .social-links a { color: #333; font-size: 1.2rem; }
+
+        footer { padding-bottom: 20px; font-size: 0.55rem; color: #222; letter-spacing: 3px; }
     </style>
 </head>
 <body>
@@ -164,24 +121,13 @@
     </header>
 
     <div class="menu-grid">
+        <a href="uygulamalar.html" class="menu-card"><i class="fas fa-mobile-alt"></i><span>UYGULAMALAR</span></a>
+        <a href="oyunlar.html" class="menu-card"><i class="fas fa-gamepad"></i><span>OYUNLAR</span></a>
         
-        <a href="uygulamalar.html" class="menu-card">
-            <i class="fas fa-mobile-alt"></i>
-            <span>UYGULAMALAR</span>
-        </a>
-
-        <a href="oyunlar.html" class="menu-card">
-            <i class="fas fa-gamepad"></i>
-            <span>OYUNLAR</span>
-        </a>
-
         <a href="ornek-siteler.html" class="menu-card full-width gold-border">
             <div style="display:flex; align-items:center;">
                 <i class="fas fa-eye"></i>
-                <div class="card-info">
-                    <span>ÖRNEK PROJELER</span>
-                    <small>Yaptığım Çalışmaları İncele</small>
-                </div>
+                <div style="margin-left:15px;"><span>ÖRNEK PROJELER</span><small style="color:#555; display:block; font-size:0.7rem;">Çalışmaları İncele</small></div>
             </div>
             <i class="fas fa-chevron-right" style="font-size:0.8rem; opacity:0.2;"></i>
         </a>
@@ -189,14 +135,16 @@
         <a href="siparis.html" class="menu-card full-width order-card">
             <div style="display:flex; align-items:center;">
                 <i class="fas fa-shopping-cart"></i>
-                <div class="card-info">
-                    <span>SİPARİŞ MERKEZİ</span>
-                    <small>Web Sitesi veya Uygulama Sipariş Et</small>
-                </div>
+                <div style="margin-left:15px;"><span>SİPARİŞ MERKEZİ</span><small style="display:block; font-size:0.7rem;">Web veya Uygulama Sipariş Et</small></div>
             </div>
             <i class="fas fa-arrow-right" style="font-size:0.8rem;"></i>
         </a>
+    </div>
 
+    <div class="info-section">
+        <div class="info-box"><i class="fas fa-bolt"></i><span>HIZLI TESLİMAT</span><small>Max 48 Saat</small></div>
+        <div class="info-box"><i class="fas fa-headset"></i><span>7/24 DESTEK</span><small>Kesintisiz İletişim</small></div>
+        <div class="info-box" style="grid-column: span 2;"><i class="fas fa-code-branch" style="color:var(--accent-gold);"></i><span style="color:var(--accent-gold);">GÜNCEL TEKNOLOJİLER</span><small>En Son SDK Versiyonları</small></div>
     </div>
 
     <div class="social-links">
@@ -206,6 +154,5 @@
     </div>
 
     <footer>CEDRIC GAMING | DESIGNED FOR THE ELITE - 2026</footer>
-
 </body>
 </html>
