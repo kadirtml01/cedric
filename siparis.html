@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SİPARİŞ VER | CEDRIC GAMING</title>
+    <title>SİPARİŞ VER | CEDRIC MODS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -29,10 +29,7 @@
             max-width: 500px;
         }
 
-        .back-nav {
-            margin-bottom: 20px;
-        }
-
+        .back-nav { margin-bottom: 20px; }
         .back-nav a {
             color: var(--primary);
             text-decoration: none;
@@ -49,26 +46,12 @@
             font-size: 1.8rem;
         }
 
-        .info-text {
-            text-align: center;
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 40px;
-        }
-
-        /* Hizmet Kartları */
         .service-card {
             background-color: var(--card-bg);
             border: 1px solid rgba(255, 69, 0, 0.2);
             padding: 25px;
             border-radius: 15px;
             margin-bottom: 20px;
-            transition: 0.3s;
-        }
-
-        .service-card:hover {
-            border-color: var(--primary);
-            box-shadow: 0 5px 15px rgba(255, 69, 0, 0.1);
         }
 
         .service-header {
@@ -78,16 +61,8 @@
             margin-bottom: 15px;
         }
 
-        .service-header i {
-            font-size: 1.5rem;
-            color: var(--primary);
-        }
-
-        .service-header h2 {
-            margin: 0;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-        }
+        .service-header i { font-size: 1.5rem; color: var(--primary); }
+        .service-header h2 { margin: 0; font-size: 1.2rem; }
 
         .price-tag {
             display: inline-block;
@@ -108,23 +83,14 @@
             font-size: 0.9rem;
         }
 
-        .service-card li {
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .service-card li i {
-            color: var(--accent-green);
-            font-size: 0.7rem;
-        }
+        .service-card li { margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+        .service-card li i { color: var(--accent-green); font-size: 0.7rem; }
 
         /* İletişim Butonları */
         .contact-group {
-            margin-top: 40px;
+            margin-top: 30px;
             display: grid;
-            gap: 15px;
+            gap: 12px;
         }
 
         .contact-btn {
@@ -132,29 +98,36 @@
             align-items: center;
             justify-content: center;
             gap: 12px;
-            padding: 18px;
+            padding: 16px;
             border-radius: 12px;
             text-decoration: none;
             color: #fff;
             font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 1px;
             transition: 0.3s;
         }
 
         .tg-btn { background: #0088cc; }
         .wa-btn { background: #25d366; }
+        /* Instagram Gradyan Renk */
+        .ig-btn { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 
-        .contact-btn:hover {
-            transform: translateY(-3px);
-            filter: brightness(1.1);
+        .contact-btn:hover { transform: translateY(-3px); opacity: 0.9; }
+
+        .info-footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #888;
+            font-size: 0.85rem;
         }
 
+        .info-footer span { color: #fff; font-weight: bold; }
+
         footer {
-            margin-top: 60px;
+            margin-top: 50px;
             text-align: center;
             font-size: 0.7rem;
-            color: #444;
+            color: #333;
             letter-spacing: 2px;
         }
     </style>
@@ -167,7 +140,6 @@
         </div>
 
         <h1>SİPARİŞ MERKEZİ</h1>
-        <p class="info-text">Hayalindeki projeyi profesyonel dokunuşla hayata geçir.</p>
 
         <div class="service-card">
             <div class="service-header">
@@ -198,15 +170,23 @@
         </div>
 
         <div class="contact-group">
-            <p style="text-align:center; font-size: 0.8rem; color: var(--primary);">DETAYLAR İÇİN İLETİŞİME GEÇİN</p>
+            <p style="text-align:center; font-size: 0.75rem; color: var(--primary); margin-bottom: 5px;">DETAYLAR İÇİN İLETİŞİME GEÇİN</p>
             
             <a href="https://t.me/cedricgaming" class="contact-btn tg-btn">
                 <i class="fab fa-telegram-plane"></i> TELEGRAM'DAN YAZ
             </a>
             
-            <a href="https://whatsapp.com/channel/0029Vb88nLU29756Wc2pxp1a" class="contact-btn wa-btn">
+            <a href="https://wa.me/905XXXXXXXXX" class="contact-btn wa-btn">
                 <i class="fab fa-whatsapp"></i> WHATSAPP'TAN YAZ
             </a>
+
+            <a href="https://instagram.com/cedricmods" class="contact-btn ig-btn">
+                <i class="fab fa-instagram"></i> INSTAGRAM'DAN YAZ
+            </a>
+        </div>
+
+        <div class="info-footer">
+            Daha fazla bilgi ve örnek projeler için: <span>kadirtml.tr</span>
         </div>
 
         <footer>CEDRIC GAMING | DESIGNED FOR THE ELITE - 2026</footer>
