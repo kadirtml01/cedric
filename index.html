@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEDRIC GAMING | OFFICIAL</title>
+    <title>CEDRIC MODS | OFFICIAL</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #ff4500; /* Turuncu */
+            --primary: #ff4500;
             --bg-dark: #080808;
             --card-bg: #111111;
-            --accent-green: #00ff41;
+            --accent-gold: #d4af37;
         }
 
         body {
@@ -25,103 +25,101 @@
             min-height: 100vh;
         }
 
-        /* Header / Logo Alanı */
         header {
-            margin-top: 60px;
+            margin-top: 50px;
             text-align: center;
         }
 
         .logo-text {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 900;
-            letter-spacing: 8px;
+            letter-spacing: 10px;
             text-transform: uppercase;
             margin: 0;
-            background: linear-gradient(to bottom, #fff, #444);
+            background: linear-gradient(to bottom, #fff, #666);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .tagline {
             color: var(--primary);
-            font-size: 0.7rem;
-            letter-spacing: 4px;
+            font-size: 0.65rem;
+            letter-spacing: 5px;
             text-transform: uppercase;
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
-        /* Menü Konteynırı */
         .menu-container {
             width: 90%;
             max-width: 450px;
-            margin-top: 50px;
+            margin-top: 40px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 15px;
         }
 
-        /* Ana Menü Butonları */
         .menu-btn {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 22px;
+            padding: 20px;
             background-color: var(--card-bg);
             border: 1px solid rgba(255, 255, 255, 0.05);
             border-radius: 15px;
             text-decoration: none;
             color: #fff;
-            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            overflow: hidden;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .menu-btn:hover {
-            transform: scale(1.03);
+            transform: translateY(-3px);
             border-color: var(--primary);
-            box-shadow: 0 10px 30px rgba(255, 69, 0, 0.15);
+            box-shadow: 0 8px 25px rgba(255, 69, 0, 0.1);
         }
 
         .menu-btn i {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             color: var(--primary);
+            width: 40px;
+            text-align: center;
         }
 
         .menu-btn-content {
             flex: 1;
-            margin-left: 20px;
+            margin-left: 15px;
         }
 
         .menu-btn-content span {
             display: block;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1rem;
             letter-spacing: 1px;
         }
 
         .menu-btn-content small {
-            color: #666;
-            font-size: 0.75rem;
+            color: #555;
+            font-size: 0.7rem;
         }
 
-        /* ÖZEL SİPARİŞ BUTONU (Neon Efektli) */
+        /* Öne Çıkan Sipariş ve Örnek Butonları */
+        .special-btn {
+            background: linear-gradient(45deg, #1a1a1a, #000);
+            border: 1px solid var(--accent-gold) !important;
+        }
+        
+        .special-btn i {
+            color: var(--accent-gold);
+        }
+
         .order-btn {
-            background: linear-gradient(45deg, #ff4500, #ff8c00);
+            background: linear-gradient(45deg, #ff4500, #b33000);
             border: none;
-            box-shadow: 0 5px 20px rgba(255, 69, 0, 0.4);
             margin-top: 10px;
         }
 
-        .order-btn .menu-btn-content span, 
-        .order-btn .menu-btn-content small {
-            color: #fff;
+        .order-btn i, .order-btn span, .order-btn small {
+            color: #fff !important;
         }
 
-        .order-btn i {
-            color: #fff;
-        }
-
-        /* Sosyal Medya Alt Bar */
         .social-bar {
             margin-top: auto;
             padding: 40px 0;
@@ -130,21 +128,21 @@
         }
 
         .social-bar a {
-            color: #444;
-            font-size: 1.5rem;
+            color: #333;
+            font-size: 1.4rem;
             transition: 0.3s;
         }
 
         .social-bar a:hover {
             color: var(--primary);
-            transform: translateY(-5px);
         }
 
         footer {
-            padding-bottom: 30px;
-            font-size: 0.65rem;
-            color: #333;
+            padding-bottom: 25px;
+            font-size: 0.6rem;
+            color: #222;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -152,34 +150,43 @@
 
     <header>
         <h1 class="logo-text">CEDRIC</h1>
-        <div class="tagline">Gaming & Software</div>
+        <div class="tagline">Mods & Software Hub</div>
     </header>
 
     <div class="menu-container">
         
         <a href="uygulamalar.html" class="menu-btn">
-            <i class="fas fa-layer-group"></i>
+            <i class="fas fa-mobile-alt"></i>
             <div class="menu-btn-content">
                 <span>UYGULAMALAR</span>
-                <small>Premium Modlu App Arşivi</small>
+                <small>Premium & Modlu Arşiv</small>
             </div>
-            <i class="fas fa-chevron-right" style="font-size: 0.8rem; color: #333;"></i>
+            <i class="fas fa-chevron-right" style="font-size: 0.7rem; opacity: 0.3;"></i>
         </a>
 
         <a href="oyunlar.html" class="menu-btn">
             <i class="fas fa-gamepad"></i>
             <div class="menu-btn-content">
                 <span>OYUNLAR</span>
-                <small>Hileli ve Sınırsız Oyunlar</small>
+                <small>Hileli & Sınırsız İçerik</small>
             </div>
-            <i class="fas fa-chevron-right" style="font-size: 0.8rem; color: #333;"></i>
+            <i class="fas fa-chevron-right" style="font-size: 0.7rem; opacity: 0.3;"></i>
+        </a>
+
+        <a href="ornek-siteler.html" class="menu-btn special-btn">
+            <i class="fas fa-eye"></i>
+            <div class="menu-btn-content">
+                <span>ÖRNEK PROJELER</span>
+                <small>Yaptığım Web Sitelerini İncele</small>
+            </div>
+            <i class="fas fa-external-link-alt" style="font-size: 0.7rem; color: var(--accent-gold);"></i>
         </a>
 
         <a href="siparis.html" class="menu-btn order-btn">
-            <i class="fas fa-rocket"></i>
+            <i class="fas fa-shopping-cart"></i>
             <div class="menu-btn-content">
-                <span>ÖZEL SİPARİŞ</span>
-                <small>Web Sitesi veya App Yaptır</small>
+                <span>SİPARİŞ MERKEZİ</span>
+                <small>Web Sitesi veya Uygulama Sipariş Et</small>
             </div>
             <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i>
         </a>
@@ -187,12 +194,12 @@
     </div>
 
     <div class="social-bar">
-        <a href="https://instagram.com/cedricgaming" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://t.me/cedricgaming" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://instagram.com/cedricmods"><i class="fab fa-instagram"></i></a>
+        <a href="https://t.me/cedricgaming"><i class="fab fa-telegram"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
 
-    <footer>ESTABLISHED 2026 | CEDRIC GAMING PRO</footer>
+    <footer>Designed for the Elite | 2026</footer>
 
 </body>
 </html>
