@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÖRNEK PROJELER | CEDRIC MODS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff4500;
+            --bg-dark: #080808;
+            --card-bg: #111111;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .back-nav { margin-bottom: 30px; }
+        .back-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            text-align: center;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 40px;
+        }
+
+        /* Örnek Site Kartları */
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .project-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .project-info h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .project-info p {
+            margin: 5px 0 0 0;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .view-btn {
+            background: rgba(255, 69, 0, 0.1);
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border: 1px solid var(--primary);
+            transition: 0.3s;
+        }
+
+        .view-btn:hover {
+            background: var(--primary);
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.65rem;
+            color: #333;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="back-nav">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> ANA SAYFA</a>
+        </div>
+
+        <h1>PROJE GALERİSİ</h1>
+        <p class="subtitle">Daha önce tamamladığım örnek çalışmaları inceleyin.</p>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Şirket Web Sitesi</h3>
+                <p>Modern, kurumsal kimliğe uygun ve profesyonel tanıtım sayfası.</p>
+            </div>
+            <a href="BURAYA_ORNEK_LINK" class="view-btn">SİTEYİ GÖRÜNTÜLE</a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Kişisel Web Sitesi</h3>
+                <p>Kendinizi ve projelerinizi tanıtabileceğiniz şık bir portfolyo.</p>
+            </div>
+            <a href="BURAYA_ORNEK_LINK" class="view-btn">SİTEYİ GÖRÜNTÜLE</a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h3>İş Yeri Web Sitesi</h3>
+                <p>Restoran, dükkan veya atölyeler için konum ve ürün odaklı sayfa.</p>
+            </div>
+            <a href="BURAYA_ORNEK_LINK" class="view-btn">SİTEYİ GÖRÜNTÜLE</a>
+        </div>
+
+        <footer>CEDRIC MODS | HIGH QUALITY DESIGN - 2026</footer>
+    </div>
+
+</body>
+</html>
