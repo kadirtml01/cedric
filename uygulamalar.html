@@ -1,4 +1,4 @@
-H<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
@@ -68,11 +68,14 @@ H<!DOCTYPE html>
             margin-bottom: 20px;
         }
 
+        /* İKON BOYUT AYARI BURADA */
         .app-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 14px;
-            object-fit: cover;
+            width: 60px;          /* İdeal genişlik */
+            height: 60px;         /* İdeal yükseklik */
+            border-radius: 12px;  /* Köşe yumuşatma */
+            object-fit: cover;    /* Resmi bozmadan sığdırır */
+            flex-shrink: 0;       /* Yanındaki yazı baskı yapınca ikonu ezmez */
+            background: #222;     /* Resim yüklenene kadar boş durmasın */
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
@@ -98,6 +101,13 @@ H<!DOCTYPE html>
         }
 
         .download-btn:hover { background: var(--primary); }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.7rem;
+            color: #444;
+            letter-spacing: 2px;
+        }
     </style>
 </head>
 <body>
@@ -112,7 +122,7 @@ H<!DOCTYPE html>
         
         <div class="card">
             <div class="card-header">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="60" height="60" style="border-radius: 12px; object-fit: cover;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="app-icon">
                 <div class="title-group">
                     <h3>Instagram Premium Mod</h3>
                     <p>Reklamsız deneyim ve tüm gizli özellikler aktif.</p>
@@ -125,7 +135,7 @@ H<!DOCTYPE html>
 
         <div class="card">
             <div class="card-header">
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/4a/7d/53/4a7d5306-03c0-0588-e962-f67f677d2963/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" class="app-icon">
+                <img src="https://www.arabam.com/blog/wp-content/uploads/2020/10/beyin-1068x468.jpg" alt="Cedric Auto" class="app-icon">
                 <div class="title-group">
                     <h3>Cedric Auto</h3>
                     <p>Profesyonel oto arıza tespit ve analiz uygulaması.</p>
@@ -138,7 +148,7 @@ H<!DOCTYPE html>
 
         <div class="card">
             <div class="card-header">
-                <img src="https://play-lh.googleusercontent.com/6_2n_Jv-9V8-aN6_H_XU7w_D7E9J6vR_Y2S6-S_C_u_G_v_Y=s256" class="app-icon">
+                <img src="https://i.pinimg.com/736x/27/1e/63/271e63c205893c29d98923d385e13aa2.jpg" alt="Remini" class="app-icon">
                 <div class="title-group">
                     <h3>Remini Cedric Premium</h3>
                     <p>Yüksek çözünürlük, tüm premium filtreler aktif.</p>
@@ -151,7 +161,7 @@ H<!DOCTYPE html>
 
         <div class="card">
             <div class="card-header">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1024px-Spotify_logo_without_text.svg.png" class="app-icon">
+                <img src="https://assets.turbologo.com/blog/en/2021/07/20045422/Spotify_logo-2015.png" alt="Spotify" class="app-icon">
                 <div class="title-group">
                     <h3>Spotify Cedric Mod</h3>
                     <p>Reklamsız müzik, sınırsız atlama ve tüm kilitler açık.</p>
@@ -164,7 +174,7 @@ H<!DOCTYPE html>
 
     </div>
 
-    <footer style="margin-top: 40px; color: #444; font-size: 0.7rem;">CEDRIC GAMING PROJECTS - 2026</footer>
+    <footer>CEDRIC GAMING PROJECTS - 2026</footer>
 
 </body>
 </html>
