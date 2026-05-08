@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SİPARİŞ VER | CEDRIC GAMING</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff4500;
+            --bg-dark: #080808;
+            --card-bg: #111111;
+            --accent-green: #00ff41;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .back-nav {
+            margin-bottom: 20px;
+        }
+
+        .back-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            text-align: center;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-top: 30px;
+            font-size: 1.8rem;
+        }
+
+        .info-text {
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+        }
+
+        /* Hizmet Kartları */
+        .service-card {
+            background-color: var(--card-bg);
+            border: 1px solid rgba(255, 69, 0, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 5px 15px rgba(255, 69, 0, 0.1);
+        }
+
+        .service-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .service-header i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .service-header h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .price-tag {
+            display: inline-block;
+            background: rgba(0, 255, 65, 0.1);
+            color: var(--accent-green);
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .service-card ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        .service-card li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-card li i {
+            color: var(--accent-green);
+            font-size: 0.7rem;
+        }
+
+        /* İletişim Butonları */
+        .contact-group {
+            margin-top: 40px;
+            display: grid;
+            gap: 15px;
+        }
+
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .tg-btn { background: #0088cc; }
+        .wa-btn { background: #25d366; }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.1);
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #444;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="back-nav">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> ANA SAYFA</a>
+        </div>
+
+        <h1>SİPARİŞ MERKEZİ</h1>
+        <p class="info-text">Hayalindeki projeyi profesyonel dokunuşla hayata geçir.</p>
+
+        <div class="service-card">
+            <div class="service-header">
+                <i class="fas fa-globe"></i>
+                <h2>Web Site Tasarımı</h2>
+            </div>
+            <div class="price-tag">Kişiye Özel Fiyatlandırma</div>
+            <ul>
+                <li><i class="fas fa-check"></i> Mobil Uyumlu (Responsive) Tasarım</li>
+                <li><i class="fas fa-check"></i> GitHub Pages / Vercel Kurulumu</li>
+                <li><i class="fas fa-check"></i> Dark/Light Tema Seçenekleri</li>
+                <li><i class="fas fa-check"></i> SEO Uyumlu Altyapı</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-header">
+                <i class="fas fa-mobile-alt"></i>
+                <h2>Android Uygulama</h2>
+            </div>
+            <div class="price-tag">Proje Bazlı Fiyatlandırma</div>
+            <ul>
+                <li><i class="fas fa-check"></i> APK Modlama ve Düzenleme</li>
+                <li><i class="fas fa-check"></i> Özel Arayüz (UI) Tasarımı</li>
+                <li><i class="fas fa-check"></i> İkon ve Marka Çalışması</li>
+                <li><i class="fas fa-check"></i> SDK Uyumluluk Ayarları</li>
+            </ul>
+        </div>
+
+        <div class="contact-group">
+            <p style="text-align:center; font-size: 0.8rem; color: var(--primary);">DETAYLAR İÇİN İLETİŞİME GEÇİN</p>
+            
+            <a href="https://t.me/cedricgaming" class="contact-btn tg-btn">
+                <i class="fab fa-telegram-plane"></i> TELEGRAM'DAN YAZ
+            </a>
+            
+            <a href="https://wa.me/TELEFON_NUMARANI_BURAYA_YAZ" class="contact-btn wa-btn">
+                <i class="fab fa-whatsapp"></i> WHATSAPP'TAN YAZ
+            </a>
+        </div>
+
+        <footer>CEDRIC GAMING | DESIGNED FOR THE ELITE - 2026</footer>
+    </div>
+
+</body>
+</html>
