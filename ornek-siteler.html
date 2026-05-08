@@ -10,6 +10,7 @@
             --primary: #ff4500;
             --bg-dark: #080808;
             --card-bg: #111111;
+            --accent-gold: #d4af37; /* Asil altın rengi */
         }
 
         body {
@@ -23,12 +24,12 @@
             align-items: center;
         }
 
-        .container {
+        .back-nav {
             width: 100%;
             max-width: 500px;
+            margin-bottom: 20px;
         }
 
-        .back-nav { margin-bottom: 30px; }
         .back-nav a {
             color: var(--primary);
             text-decoration: none;
@@ -38,112 +39,150 @@
         }
 
         h1 {
-            text-align: center;
-            letter-spacing: 5px;
+            font-size: 1.8rem;
             text-transform: uppercase;
-            font-size: 1.6rem;
+            letter-spacing: 5px;
+            margin-top: 20px;
             margin-bottom: 10px;
+            text-align: center;
+            background: linear-gradient(to bottom, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .subtitle {
             text-align: center;
             color: #666;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             margin-bottom: 40px;
+            letter-spacing: 1px;
         }
 
-        /* Örnek Site Kartları */
-        .project-card {
+        .container {
+            width: 100%;
+            max-width: 500px;
+            display: grid;
+            gap: 25px;
+        }
+
+        .card {
             background-color: var(--card-bg);
-            border-radius: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.1); /* Hafif altın çerçeve */
             padding: 20px;
-            margin-bottom: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
             transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-3px);
+        }
+
+        .card-header {
             display: flex;
-            flex-direction: column;
+            align-items: center;
             gap: 15px;
+            margin-bottom: 20px;
         }
 
-        .project-card:hover {
-            border-color: var(--primary);
-            transform: translateY(-5px);
+        /* DİĞER SAYFALARLA AYNI AYARDA KÜÇÜK RESİM (ICON) */
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: #222;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .project-info h3 {
-            margin: 0;
-            font-size: 1.1rem;
-            color: var(--primary);
-        }
-
-        .project-info p {
-            margin: 5px 0 0 0;
-            font-size: 0.85rem;
-            color: #888;
-        }
+        .title-group { flex: 1; }
+        .card h3 { margin: 0; font-size: 1.1rem; color: var(--accent-gold); }
+        .card p { margin: 5px 0 0 0; color: #888; font-size: 0.8rem; line-height: 1.4; }
 
         .view-btn {
-            background: rgba(255, 69, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: transparent;
+            border: 1px solid var(--accent-gold);
             color: #fff;
+            padding: 12px;
             text-decoration: none;
-            text-align: center;
-            padding: 10px;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 0.8rem;
             font-weight: bold;
-            border: 1px solid var(--primary);
             transition: 0.3s;
+            text-transform: uppercase;
         }
 
         .view-btn:hover {
-            background: var(--primary);
+            background: var(--accent-gold);
+            color: #000;
         }
 
         footer {
             margin-top: 50px;
-            text-align: center;
-            font-size: 0.65rem;
-            color: #333;
+            font-size: 0.7rem;
+            color: #444;
             letter-spacing: 2px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="back-nav">
-            <a href="index.html"><i class="fas fa-arrow-left"></i> ANA SAYFA</a>
-        </div>
-
-        <h1>PROJE GALERİSİ</h1>
-        <p class="subtitle">Daha önce tamamladığım örnek çalışmaları inceleyin.</p>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Şirket Web Sitesi</h3>
-                <p>Modern, kurumsal kimliğe uygun ve profesyonel tanıtım sayfası.</p>
-            </div>
-            <a href="BURAYA_ORNEK_LINK" class="view-btn">SİTEYİ GÖRÜNTÜLE</a>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Kişisel Web Sitesi</h3>
-                <p>Kendinizi ve projelerinizi tanıtabileceğiniz şık bir portfolyo.</p>
-            </div>
-            <a href="BURAYA_ORNEK_LINK" class="view-btn">SİTEYİ GÖRÜNTÜLE</a>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>İş Yeri Web Sitesi</h3>
-                <p>Restoran, dükkan veya atölyeler için konum ve ürün odaklı sayfa.</p>
-            </div>
-            <a href="BURAYA_ORNEK_LINK" class="view-btn">SİTEYİ GÖRÜNTÜLE</a>
-        </div>
-
-        <footer>CEDRIC MODS | HIGH QUALITY DESIGN - 2026</footer>
+    <div class="back-nav">
+        <a href="index.html"><i class="fas fa-arrow-left"></i> ANA SAYFA</a>
     </div>
+
+    <h1>PROJE GALERİSİ</h1>
+    <p class="subtitle">TAMAMLANMIŞ ÖRNEK ÇALIŞMALAR</p>
+
+    <div class="container">
+        
+        <div class="card">
+            <div class="card-header">
+                <img src="BURAYA_KURUMSAL_KUCUK_RESIM_LINKI" alt="Kurumsal" class="project-icon">
+                <div class="title-group">
+                    <h3>Şirket Web Sitesi</h3>
+                    <p>Global standartlarda, kurumsal ve profesyonel tasarım örneği.</p>
+                </div>
+            </div>
+            <a href="ornek-kurumsal.html" class="view-btn">
+                <i class="fas fa-external-link-alt"></i> SİTEYİ İNCELE
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="BURAYA_KISISEL_KUCUK_RESIM_LINKI" alt="Kişisel" class="project-icon">
+                <div class="title-group">
+                    <h3>Kişisel Portfolyo</h3>
+                    <p>Freelancer ve sanatçılar için modern ve şık tanıtım sayfası.</p>
+                </div>
+            </div>
+            <a href="ornek-kisisel.html" class="view-btn">
+                <i class="fas fa-external-link-alt"></i> SİTEYİ İNCELE
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="BURAYA_ISYERI_KUCUK_RESIM_LINKI" alt="İş Yeri" class="project-icon">
+                <div class="title-group">
+                    <h3>İş Yeri & Dükkan</h3>
+                    <p>Oto servis, restoran veya atölyeler için özel tasarım örneği.</p>
+                </div>
+            </div>
+            <a href="ornek-isyeri.html" class="view-btn">
+                <i class="fas fa-external-link-alt"></i> SİTEYİ İNCELE
+            </a>
+        </div>
+
+    </div>
+
+    <footer>CEDRIC MODS | PREMIUM SOFTWARE SOLUTIONS - 2026</footer>
 
 </body>
 </html>
