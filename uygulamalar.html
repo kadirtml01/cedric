@@ -3,63 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uygulamalar | CEDRİC GAMİNG</title>
+    <title>MODLU UYGULAMALAR | CEDRİC GAMİNG</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary: #ff4500; --bg-dark: #050505; --card-bg: rgba(255, 255, 255, 0.03); --border: rgba(255, 255, 255, 0.1); }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg-dark); color: #e0e0e0; margin: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
-        header { padding: 40px 20px; text-align: center; }
-        header h1 { font-size: 2rem; letter-spacing: 4px; text-transform: uppercase; margin: 0; color: #fff; }
-        .back-link { color: var(--primary); text-decoration: none; font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; display: block; }
-        .container { width: 90%; max-width: 600px; flex-grow: 1; margin-bottom: 50px; }
-        .card { background: var(--card-bg); border: 1px solid var(--border); padding: 20px; border-radius: 4px; margin-bottom: 20px; backdrop-filter: blur(10px); border-left: 4px solid #00c853; }
-        .card h3 { margin: 0; font-size: 1.2rem; letter-spacing: 1px; }
-        .card p { font-size: 0.85rem; color: #aaa; margin: 10px 0; }
-        .dl-btn { display: inline-block; padding: 10px 20px; background: transparent; color: #fff; border: 1px solid var(--primary); text-decoration: none; font-size: 0.8rem; font-weight: bold; transition: 0.3s; }
-        .dl-btn:hover { background: var(--primary); }
-        .request-section { text-align: center; padding: 40px 0; border-top: 1px solid var(--border); width: 100%; }
-        .request-text { font-size: 0.75rem; color: #666; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
-        .social-container { display: flex; gap: 25px; justify-content: center; }
-        .social-icon { color: #888; font-size: 1.6rem; transition: 0.3s; text-decoration: none; }
-        .instagram:hover { color: #E1306C; }
-        .telegram:hover { color: #0088cc; }
-        .youtube:hover { color: #FF0000; }
+        :root {
+            --primary: #ff4500;
+            --bg-dark: #080808;
+            --card-bg: #111111;
+            --accent-green: #00ff41;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .back-nav {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        .back-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            display: grid;
+            gap: 25px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--accent-green);
+            padding: 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        /* İkon ve Başlık Alanı */
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .app-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 12px;
+            object-fit: cover;
+            background: #222;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .title-group {
+            flex: 1;
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            margin: 5px 0 0 0;
+            color: #888;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: #fff;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .download-btn:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.7rem;
+            color: #444;
+            letter-spacing: 2px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="back-link">← Ana Sayfa</a>
-        <h1>MODLU UYGULAMALAR</h1>
-    </header>
+
+    <div class="back-nav">
+        <a href="index.html"><i class="fas fa-arrow-left"></i> ANA SAYFA</a>
+    </div>
+
+    <h1>MODLU<br>UYGULAMALAR</h1>
+
     <div class="container">
+        
         <div class="card">
-            <h3>Instagram Premium Mod</h3>
-            <p>Reklamsız deneyim ve tüm gizli özellikler aktif.</p>
-            <a href="https://t.me/cedricgaming/12" target="_blank" class="dl-btn"><i class="fab fa-telegram"></i> TELEGRAM'DAN İNDİR</a>
+            <div class="card-header">
+                <img src="img/instagram.png" alt="Icon" class="app-icon">
+                <div class="title-group">
+                    <h3>Instagram Premium Mod</h3>
+                    <p>Reklamsız deneyim ve tüm gizli özellikler aktif.</p>
+                </div>
+            </div>
+            <a href="https://t.me/cedricgaming" class="download-btn">
+                <i class="fab fa-telegram"></i> TELEGRAM'DAN İNDİR
+            </a>
         </div>
+
         <div class="card">
-            <h3>Cedric Auto</h3>
-            <p>Profesyonel oto arıza tespit ve analiz uygulaması.</p>
-            <a href="https://t.me/cedricgaming/17" target="_blank" class="dl-btn"><i class="fab fa-telegram"></i> TELEGRAM'DAN İNDİR</a>
+            <div class="card-header">
+                <img src="img/cedric-auto.png" alt="Icon" class="app-icon">
+                <div class="title-group">
+                    <h3>Cedric Auto</h3>
+                    <p>Profesyonel oto arıza tespit ve analiz uygulaması.</p>
+                </div>
+            </div>
+            <a href="https://t.me/cedricgaming" class="download-btn">
+                <i class="fab fa-telegram"></i> TELEGRAM'DAN İNDİR
+            </a>
         </div>
+
         <div class="card">
-            <h3>Remini Cedric Premium</h3>
-            <p>Yüksek çözünürlük, tüm premium filtreler ve özellikler aktif.</p>
-            <a href="https://t.me/cedricgaming/18" target="_blank" class="dl-btn"><i class="fab fa-telegram"></i> TELEGRAM'DAN İNDİR</a>
+            <div class="card-header">
+                <img src="img/remini.png" alt="Icon" class="app-icon">
+                <div class="title-group">
+                    <h3>Remini Cedric Premium</h3>
+                    <p>Yüksek çözünürlük, tüm premium filtreler aktif.</p>
+                </div>
+            </div>
+            <a href="https://t.me/cedricgaming" class="download-btn">
+                <i class="fab fa-telegram"></i> TELEGRAM'DAN İNDİR
+            </a>
         </div>
+
         <div class="card">
-            <h3>Spotify Cedric Mod</h3>
-            <p>Reklamsız müzik, sınırsız atlama ve tüm kilitler açık.</p>
-            <a href="https://t.me/cedricgaming/22" target="_blank" class="dl-btn"><i class="fab fa-telegram"></i> TELEGRAM'DAN İNDİR</a>
+            <div class="card-header">
+                <img src="img/spotify.png" alt="Icon" class="app-icon">
+                <div class="title-group">
+                    <h3>Spotify Cedric Mod</h3>
+                    <p>Reklamsız müzik, sınırsız atlama ve tüm kilitler açık.</p>
+                </div>
+            </div>
+            <a href="https://t.me/cedricgaming" class="download-btn">
+                <i class="fab fa-telegram"></i> TELEGRAM'DAN İNDİR
+            </a>
         </div>
+
     </div>
-    <div class="request-section">
-        <div class="request-text">İstek oyun veya uygulama?</div>
-        <div class="social-container">
-            <a href="https://instagram.com/kadirtml.tr" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://t.me/cedricgaming" target="_blank" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
-            <a href="https://youtube.com/@cedricgaming01?si=l9hIQaNzLQbeqoaK" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
-        </div>
-    </div>
+
+    <footer>DESIGNED FOR THE ELITE - 2026</footer>
+
 </body>
 </html>
