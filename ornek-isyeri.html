@@ -2,23 +2,39 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>CEDRIC AUTO SERVİS | ÖRNEK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDRIC AUTO | PERFORMANCE</title>
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #1a1a1a; color: white; }
-        .top-bar { background: #ff4500; padding: 15px; text-align: center; font-weight: bold; }
-        .content { padding: 50px; text-align: center; }
-        .btn { background: #ff4500; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; display: inline-block; margin-top: 20px; }
-        .back-btn { background: #fff; color: #000; padding: 10px; text-decoration: none; border-radius: 5px; position: fixed; top: 10px; right: 10px; font-size: 12px; }
+        body { margin: 0; background: #0a0a0a; color: #fff; font-family: 'Oswald', sans-serif; }
+        .top-nav { padding: 30px; display: flex; justify-content: space-between; border-bottom: 1px solid #222; }
+        .banner { 
+            height: 70vh; background: linear-gradient(to right, #000, rgba(0,0,0,0)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; display: flex; align-items: center; padding: 0 10%;
+        }
+        .banner-content { max-width: 600px; }
+        .banner-content h2 { font-size: 5rem; margin: 0; font-style: italic; line-height: 1; }
+        .service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); padding: 50px; gap: 20px; }
+        .s-box { background: #111; padding: 30px; border-top: 5px solid #ff4500; transition: 0.3s; }
+        .s-box:hover { background: #1a1a1a; transform: translateY(-10px); }
+        .back-btn { position: fixed; top: 20px; right: 20px; background: #fff; color: #000; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 12px; }
     </style>
 </head>
 <body>
-    <a href="ornek-siteler.html" class="back-btn">← ÖRNEKLERE DÖN</a>
-    <div class="top-bar">CEDRIC AUTO & PERFORMANCE</div>
-    <div class="content">
-        <h1 style="font-size: 3rem;">PROFESYONEL ARAÇ BAKIM</h1>
-        <p>OBD Diagnoz, Motor Revizyon ve Şanzıman Tamiri</p>
-        <p style="color: #888;">Hızlı randevu ve kaliteli işçilik için bize ulaşın.</p>
-        <a href="#" class="btn">RANDEVU AL</a>
+    <a href="ornek-siteler.html" class="back-btn">← GALERİYE DÖN</a>
+    <div class="top-nav">
+        <div style="font-size: 1.5rem; font-weight: bold; color: #ff4500;">CEDRIC AUTO</div>
+        <div>HİZMETLER | GALERİ | İLETİŞİM</div>
+    </div>
+    <div class="banner">
+        <div class="banner-content">
+            <h2>GÜCÜ <br>HİSSET.</h2>
+            <p style="font-family: sans-serif; color: #aaa;">Profesyonel Diagnoz ve Mekanik Revizyon Merkezi.</p>
+        </div>
+    </div>
+    <div class="service-list">
+        <div class="s-box"><h3>MOTOR REVİZYON</h3><p>Tam performans geri kazanımı.</p></div>
+        <div class="s-box"><h3>OBD DİAGNOZ</h3><p>Nokta atışı hata tespiti.</p></div>
+        <div class="s-box"><h3>CHIP TUNING</h3><p>Yazılımsal güç artışı.</p></div>
     </div>
 </body>
 </html>
